@@ -34,7 +34,7 @@ export default function Cart(){
                                 <p className="line-through text-[var(--text-muted)] my-4 text-3xl">{(item.initialPrice*item.qty).toFixed(2)}$</p>
                                 <p className="p-1 bg-red-500 rounded-xl font-bold text-white">- {((item.initialPrice - item.price) * item.qty).toFixed(2)} $</p>
                             </div>
-                            <p className="text-2xl mb-4">Price: {item.price*item.qty} $</p>
+                            <p className="text-2xl mb-4">Price: {(item.price*item.qty).toFixed(2)} $</p>
                             <p className="text-[var(--text-muted)]">{item.description}</p>
                             <div className="flex gap-4 items-center mt-4">
                                 <p className="text-3xl cursor-pointer" onClick={() => decrement(item)}>-</p>
