@@ -68,7 +68,7 @@ export default function Nav(){
               <MenuIcon className="cursor-pointer !text-3xl [@media(min-width:1150px)]:!hidden" onClick={openNav}/>
             </div>
         </nav>
-        <div className="w-[375px] h-screen fixed top-0 right-[-375px] bg-[var(--primary-color)] p-4 nav-m ">
+        <div className="w-[375px] h-screen fixed top-0 right-[-375px] bg-[var(--primary-color)] p-4 nav-m z-1000">
           <CloseIcon className="cursor-pointer !text-3xl text-[var(--text-color)]" onClick={closeNav}/>
           <div className="flex gap-2 items-center my-8">
                 {theme === 'light' ? <img src={pawn_shop} alt="logo" id="logo"/> : <img src={pawn2} alt="logo" id="logo"/>}
