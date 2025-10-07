@@ -2,8 +2,8 @@ import { createPortal } from "react-dom";
 import CloseIcon from '@mui/icons-material/Close';
 import { useContext, useState } from "react";
 import { portalContext } from "./Cart"
-import PayPal from '../assets/PayPal.png'
-import Visa from '../assets/Visa.png'
+import PayPal from '../assets/paypal.png'
+import Visa from '../assets/visa.png'
 import MasterCard from '../assets/card.png'
 
 export default function Portal({children, total}) {
